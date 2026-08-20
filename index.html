@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kinlead — HR Solutions That Move Your Business Forward</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="nav-spacer"></div>
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <div class="logo" onclick="goTo('home')"><span class="name">KINLEAD</span><span class="dot"></span></div>
+    <div class="nav-links">
+      <button class="nav-link" onclick="goTo('run')">Run</button>
+      <button class="nav-link" onclick="goTo('build')">Build</button>
+      <button class="nav-link" onclick="goTo('transform')">Transform</button>
+      <button class="nav-link" onclick="goTo('insights')">Insights</button>
+      <button class="btn-cta" onclick="goTo('contact')">Let's talk</button>
+    </div>
+    <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Menu"><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <button class="nav-link" onclick="goTo('run')">Run</button>
+    <button class="nav-link" onclick="goTo('build')">Build</button>
+    <button class="nav-link" onclick="goTo('transform')">Transform</button>
+    <button class="nav-link" onclick="goTo('insights')">Insights</button>
+    <button class="nav-link" onclick="goTo('framework')">Framework</button>
+    <button class="btn-cta" onclick="goTo('contact')">Let's talk</button>
+  </div>
+</nav>
+
+<!-- ============ HOME ============ -->
+<div class="page active" id="page-home">
+  <div class="hero">
+    <video autoplay muted loop playsinline></video>
+    <div class="hero-veil"></div>
+    <div class="hero-content">
+      <h1>HR Solutions That Move Your Business Forward</h1>
+      <p>Kinlead builds the people infrastructure that lets ambitious organisations across East Africa scale without losing the culture that got them here.</p>
+      <div class="hero-actions">
+        <button class="btn-cta" onclick="goTo('contact')">Let's talk</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="philosophy">
+    <div class="philosophy-inner">
+      <div class="eyebrow">Our brand philosophy</div>
+      <div class="philosophy-text">Business moves through people: Kinlead helps organizations make both work.</div>
+    </div>
+  </div>
+
+  <div class="services-section">
+    <div class="services-header">
+      <div class="eyebrow">SERVICES FOR EVERY STAGE</div>
+      <h2>Where are you today?</h2>
+      <div style="font-size:15px">Pick the sentence that sounds like your last leadership meeting.</div>
+    </div>
+    <div class="services-grid">
+      <button class="service-card" style="--card-img:url('images/run.jpg')" onclick="goTo('run')">
+        <div class="service-card-inner">
+          <div class="service-title">Run</div>
+          <div class="service-quote">“We're growing across multiple locations, and each one handles HR a little differently. Nobody has one system telling them what's actually happening.”</div>
+          <div class="service-cta">Explore Run <span>→</span></div>
+        </div>
+      </button>
+      <button class="service-card" style="--card-img:url('images/transform.jpg')" onclick="goTo('build')">
+        <div class="service-card-inner">
+          <div class="service-title">Build</div>
+          <div class="service-quote">“We've grown faster than our structure. Career paths exist in someone's head, not on paper, and hiring is outpacing onboarding.”</div>
+          <div class="service-cta">Explore Build <span>→</span></div>
+        </div>
+      </button>
+      <button class="service-card" style="--card-img:url('images/pexels-cytonn-955392.jpg')" onclick="goTo('transform')">
+        <div class="service-card-inner">
+          <div class="service-title">Transform</div>
+          <div class="service-quote">“The culture is real, but it lives in the founder. Nobody's sure it survives the next stage of growth.”</div>
+          <div class="service-cta">Explore Transform <span>→</span></div>
+        </div>
+      </button>
+    </div>
+  </div>
+
+  <div class="nn-band">
+    <div class="nn-inner">
+      <div class="nn-header">
+        <div>
+          <div class="eyebrow">Our methodology</div>
+          <h2>The Numbers &amp; Names Framework</h2>
+        </div>
+      </div>
+      <div class="nn-grid">
+        <div>
+          <div class="nn-col-title">Numbers</div>
+          <div class="nn-col-text">Headcount, cost, spans of control, attrition, compliance exposure. The measurable state of the organisation — what the business can count and must answer for.</div>
+        </div>
+        <div class="nn-divider"></div>
+        <div>
+          <div class="nn-col-title">Names</div>
+          <div class="nn-col-text">The individuals behind each number — who is ready, who is stuck, who holds the culture, who leaves if nothing changes. The human reality the numbers can't show.</div>
+        </div>
+      </div>
+    </div>
+    <div class="nn-link-row"><a onclick="goTo('framework')">Read the full framework →</a></div>
+  </div>
+
+  <div class="founders">
+    <div class="founders-inner">
+      <h2>The Founders</h2>
+      <div class="founders-grid">
+        <div class="founder">
+          <div class="founder-photo"><span>peter — portrait 4:5</span></div>
+          <div>
+            <div class="founder-name">Peter Muthua</div>
+            <div class="founder-role">Co-founder</div>
+            <p class="founder-bio">14 years in senior HR leadership across L'Oréal's global and East African operations, most recently Senior HR Business Partner for a €660M business spanning 19 countries.</p>
+            <div class="founder-cred">MBA, Strathmore Business School · Member, IHRM Kenya</div>
+          </div>
+        </div>
+        <div class="founder">
+          <div class="founder-photo"><span>njoki — portrait 4:5</span></div>
+          <div>
+            <div class="founder-name">Njoki Mwisywa</div>
+            <div class="founder-role">Co-founder</div>
+            <p class="founder-bio">Over a decade across consulting, DEI strategy and organisational development, including Kering SA and Ernst &amp; Young.</p>
+            <div class="founder-cred">MSc Management &amp; Organisation Development · iMBA, IESEG Paris · MA Counselling Psychology (in progress)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ RUN ============ -->
+<div class="page" id="page-run">
+  <div class="page-hero">
+    <img src="images/run.jpg" alt="Run">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <div class="page-hero-inner">
+        <div class="eyebrow-pill"><span>THE FRONT DOOR</span></div>
+        <h1>Run</h1>
+        <p>We take the HR function off your desk and give it one system, one calendar and one source of truth — while you remain the legal employer.</p>
+      </div>
+    </div>
+  </div>
+  <div class="content-blocks">
+    <div class="two-col-grid">
+      <div class="info-card"><h3>Outsourced HR department</h3><p>You remain the legal employer; Kinlead manages the process, the paperwork and the people rhythm end to end.</p></div>
+      <div class="info-card"><h3>People operations</h3><p>Payroll, statutory compliance and leave management run on a predictable monthly cycle.</p></div>
+      <div class="info-card"><h3>HR systems &amp; vendor management</h3><p>Selection, implementation and ongoing management of the tools and providers your team actually uses.</p></div>
+      <div class="info-card"><h3>Customized HR policies</h3><p>Policy written for how your organisation works — not a template with your logo on it.</p></div>
+    </div>
+    <div class="quote-wrap">
+      <div class="quote-mark top">“</div>
+      <div class="quote-card">
+        <p>We're growing across multiple locations, and each one handles HR a little differently. Nobody has one system telling them what's actually happening.</p>
+        <div class="quote-attr">Composite client voice</div>
+      </div>
+      <div class="quote-mark bottom">”</div>
+    </div>
+  </div>
+  <div class="cta-band compact">
+    <div class="cta-band-inner">
+      <div class="cta-band-text">Not ready for a full engagement? Start with a Café session.</div>
+      <button class="btn-invert" onclick="goTo('build')">See Kinlead Academy →</button>
+    </div>
+  </div>
+  <div class="next-journey">
+    <div class="next-journey-inner">
+      <div class="next-journey-label">Next in the journey</div>
+      <div class="next-journey-link" onclick="goTo('build')">Build — core infrastructure →</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ BUILD ============ -->
+<div class="page" id="page-build">
+  <div class="page-hero">
+    <img src="images/transform.jpg" alt="Build">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <div class="page-hero-inner">
+        <div class="eyebrow-pill"><span>THE CORE INFRASTRUCTURE</span></div>
+        <h1>Build</h1>
+        <p>Hiring, onboarding, performance and management capability, put on paper and taught to the people who have to run them.</p>
+      </div>
+    </div>
+  </div>
+  <div class="content-blocks">
+    <div class="two-col-grid">
+      <div class="info-card"><h3>Recruitment</h3><p>Role definition through offer, run against the scorecard your business will actually manage to.</p></div>
+      <div class="info-card"><h3>Onboarding</h3><p>A first-90-days structure so new hires reach productive work without depending on one busy manager.</p></div>
+      <div class="info-card"><h3>Performance management</h3><p>Goals, review cadence and career paths documented — and managers coached to hold the conversations.</p></div>
+      <div class="info-card"><h3>Manager's Café</h3><p>Our flagship management programme, delivered through Kinlead Academy.</p></div>
+    </div>
+    <div class="quote-wrap">
+      <div class="quote-mark top">“</div>
+      <div class="quote-card">
+        <p>We've grown faster than our structure. Career paths exist in someone's head, not on paper, and hiring is outpacing onboarding.</p>
+        <div class="quote-attr">Composite client voice</div>
+      </div>
+      <div class="quote-mark bottom">”</div>
+    </div>
+  </div>
+  <div class="cta-band spotlight">
+    <div class="nn-inner">
+      <div class="spotlight-eyebrow">Spotlight</div>
+      <h2>Kinlead Academy</h2>
+      <p class="lead">Management is a craft, not a promotion. Two programmes, built around real people decisions.</p>
+      <div class="spotlight-grid">
+        <div class="spotlight-card">
+          <div class="spotlight-card-head"><h3>The Café</h3><div class="badge now">Now enrolling</div></div>
+          <p>For individual contributors moving into management — the first team, the first hard conversation, the first performance call.</p>
+        </div>
+        <div class="spotlight-card">
+          <div class="spotlight-card-head"><h3>The Foundry</h3><div class="badge next">Coming next</div></div>
+          <p>For founders and MDs building people-decision skills at the top of the organisation.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="next-journey">
+    <div class="next-journey-inner">
+      <div class="next-journey-label">Next in the journey</div>
+      <div class="next-journey-link" onclick="goTo('transform')">Transform — strategic layer →</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ TRANSFORM ============ -->
+<div class="page" id="page-transform">
+  <div class="page-hero">
+    <img src="images/pexels-cytonn-955392.jpg" alt="Transform">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <div class="page-hero-inner">
+        <div class="eyebrow-pill"><span>THE STRATEGIC LAYER</span></div>
+        <h1>Transform</h1>
+        <p>Culture, structure and strategy worked on deliberately, so what makes the organisation good survives its next stage of growth.</p>
+      </div>
+    </div>
+  </div>
+  <div class="content-blocks">
+    <div class="two-col-grid">
+      <div class="info-card bordered"><h3>Organisation development &amp; culture design</h3><p>Structure, decision rights and the behaviours you want to be true when the founder isn't in the room.</p></div>
+      <div class="info-card bordered"><h3>Change management &amp; people strategy</h3><p>Restructures, new markets and leadership transitions, sequenced so the business keeps running through them.</p></div>
+      <div class="info-card bordered"><h3>Employee engagement</h3><p>Listening that produces decisions — not a survey report nobody acts on.</p></div>
+      <div class="info-card bordered"><h3>DEI &amp; wellness</h3><p>Practical inclusion and wellbeing work tied to how people are hired, paid, promoted and supported.</p></div>
+    </div>
+    <div class="quote-wrap">
+      <div class="quote-mark top">“</div>
+      <div class="quote-card">
+        <p>The culture is real, but it lives in the founder. Nobody's sure it survives the next stage of growth.</p>
+        <div class="quote-attr">Composite client voice</div>
+      </div>
+      <div class="quote-mark bottom">”</div>
+    </div>
+  </div>
+  <div class="cta-band compact">
+    <div class="cta-band-inner">
+      <div class="cta-band-text">Every engagement runs through Numbers &amp; Names.</div>
+      <button class="btn-invert" onclick="goTo('framework')">See the framework →</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ INSIGHTS ============ -->
+<div class="page" id="page-insights">
+  <div class="page-hero">
+    <img src="images/pexels-cytonn-955392.jpg" alt="Insights">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <div class="page-hero-inner">
+        <div class="eyebrow-pill"><span>THE NUMBERS &amp; NAMES BLOG</span></div>
+        <h1>Insights</h1>
+        <p>Research, field notes and opinion on how organisations in East Africa actually make people decisions.</p>
+      </div>
+    </div>
+  </div>
+  <div class="insights-body">
+    <div class="insights-inner">
+      <div class="featured-grid">
+        <div class="featured-post">
+          <div>
+            <div class="cat">CATEGORY</div>
+            <h3>Extra extra long and detailed blog post title of a featured post.</h3>
+          </div>
+          <div class="meta-row">
+            <div class="meta">August 2026 · 9 min read</div>
+            <div class="readmore">Read more →</div>
+          </div>
+        </div>
+        <div class="featured-img"><span>editorial image — 4:3</span></div>
+      </div>
+      <div class="post-grid">
+        <div class="post-card">
+          <div class="cat">CATEGORY</div>
+          <h3>Sample blog bost title</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam diam lectus, vestibulum.</p>
+          <div class="meta">July 2026 · 5 min</div>
+        </div>
+        <div class="post-card">
+          <div class="cat">CATEGORY</div>
+          <h3>Sample blog bost title</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam diam lectus, vestibulum.</p>
+          <div class="meta">June 2026 · 6 min</div>
+        </div>
+        <div class="post-card">
+          <div class="cat">CATEGORY</div>
+          <h3>Sample blog bost title</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam diam lectus, vestibulum.</p>
+          <div class="meta">May 2026 · 4 min</div>
+        </div>
+      </div>
+      <div class="newsletter">
+        <h3>Subscribe to our Newsletter</h3>
+        <div class="newsletter-row">
+          <div>
+            <h4>Numbers &amp; Names, monthly</h4>
+            <p>One piece of research, one practical decision aid. No filler.</p>
+          </div>
+          <div class="newsletter-form">
+            <input type="email" placeholder="Work email">
+            <button>Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ FRAMEWORK ============ -->
+<div class="page" id="page-framework">
+  <div class="framework-hero">
+    <div class="framework-hero-inner">
+      <div class="eyebrow">Our methodology</div>
+      <h1>The Numbers &amp; Names Framework</h1>
+      <p>Every engagement runs two parallel question sets through four steps. The numbers tell us what is true. The names tell us what it will take.</p>
+    </div>
+  </div>
+  <div class="framework-table-wrap">
+    <div class="framework-table">
+      <div class="head-step">Step</div>
+      <div class="head-numbers">Numbers</div>
+      <div class="head-names">Names</div>
+
+      <div class="step-cell"><div class="step-num">01</div><div class="step-name">Diagnose</div></div>
+      <div class="numbers-cell">What does headcount, cost, span of control and attrition actually say about how this organisation is built?</div>
+      <div class="names-cell">Who is carrying the organisation informally, and who is quietly deciding whether to stay?</div>
+
+      <div class="step-cell"><div class="step-num">02</div><div class="step-name">Design</div></div>
+      <div class="numbers-cell">What structure, policy and cost envelope does the strategy require in the next 18 months?</div>
+      <div class="names-cell">Which named people grow into those roles, and which gaps must be hired or taught?</div>
+
+      <div class="step-cell"><div class="step-num">03</div><div class="step-name">Deploy</div></div>
+      <div class="numbers-cell">What systems, cycles and compliance obligations go live, and on what calendar?</div>
+      <div class="names-cell">Who owns each change in front of their team, and what support do they get to hold it?</div>
+
+      <div class="step-cell last"><div class="step-num">04</div><div class="step-name">Embed</div></div>
+      <div class="numbers-cell last">Which metrics prove it held six months later, without us in the room?</div>
+      <div class="names-cell last">Do managers now run these conversations themselves — and can they name why it matters?</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ CONTACT ============ -->
+<div class="page" id="page-contact">
+  <div class="contact-hero" style="--contact-bg:url('images/pexels-jamies-x-co-7519973-77dfc1fa.jpg')">
+    <div class="contact-grid">
+      <div class="contact-text">
+        <div class="eyebrow-small">Get in touch</div>
+        <h1>Let's talk</h1>
+        <p>Email us at&nbsp;<a href="mailto:hello@kinlead.co.ke">hello@kinlead.co.ke</a>&nbsp;or fill in this form we'll get back to you soon.</p>
+      </div>
+      <div class="contact-card">
+        <h2>Contact us</h2>
+        <p>We'd love to hear from you.</p>
+        <form class="form-col" onsubmit="event.preventDefault();">
+          <div class="form-row">
+            <div class="field"><label>Name</label><input type="text" placeholder="Your full name"></div>
+            <div class="field"><label>Work email</label><input type="email" placeholder="you@company.com"></div>
+          </div>
+          <div class="form-row">
+            <div class="field"><label>Company</label><input type="text" placeholder="Organisation name"></div>
+            <div class="field">
+              <label>Where are you today?</label>
+              <select>
+                <option>Run</option>
+                <option>Build</option>
+                <option>Transform</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label>Your messages</label>
+            <textarea rows="4" placeholder="A few lines about your team and where you'd like support"></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo"><span class="name">KINLEAD</span><span class="dot"></span></div>
+        <div class="footer-tag">Business Fluent, Grounded in people</div>
+      </div>
+      <div class="footer-contacts">
+        <a href="mailto:hello@kinlead.co.ke">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+          hello@kinlead.co.ke
+        </a>
+        <div class="row">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          Nairobi, Kenya
+        </div>
+      </div>
+    </div>
+    <div class="footer-copy">© 2026 Kinlead. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
